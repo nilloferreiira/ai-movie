@@ -1,6 +1,6 @@
-## AI Movies
+## AI Movie
 
-Uma aplicação que consome uma API e retorna filmes que estão em alta!
+Uma aplicação usando Next13 e React, que consome uma API e retorna filmes que estão em alta!
 
 ![foto mais recente](/public/assets/readmeimg.png)
 
