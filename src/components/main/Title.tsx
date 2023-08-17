@@ -1,17 +1,20 @@
-'use client'
-
 import { Star } from "phosphor-react";
 
+interface TitleProps {
+  children: any;
+  vote: any;
+}
 
-export function Title(props: any) {
-    return (
-        <div className="flex items-center justify-between py-4">
-            <h1 className="font-black text-xl text-white">{props.children}</h1>
+// arrumar grid imagem e titulo
 
-          <div className="flex gap-1 items-center text-principal-yellow">  
-            <Star size={20} weight={'fill'}/>
-            <span>4.9</span>
-            </div>
-          </div>
-    )
+export function Title(props: TitleProps) {
+  return (
+    <div className="flex items-center justify-center py-4 h-[4em] w-full overflow-hidden">
+      <h1 className="font-black text-xl text-white truncate">{props.children}</h1>
+      <div className="flex gap-1 items-center text-principal-yellow">
+        <Star size={20} weight={"fill"} />
+        <span>{props.vote}</span>
+      </div>
+    </div>
+  );
 }

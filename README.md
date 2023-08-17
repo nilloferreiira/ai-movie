@@ -13,3 +13,9 @@ Uma aplicação usando Next13 e React, que consome uma API e retorna filmes que 
 - criei um hook que para consumir a API
 - organizei algumas partes da aplicação que estavam em lugares errados 
 - ainda preciso organizar alguns erros bobos, mas os quais não identifiquei ainda, fora isso preciso dar um toque final no design dos cards e terminar de consumir o restante das infos necessárias que a api me disponibiliza
+
+### dia 17/08:
+* Hoje terminei de criar o hook que faz a requesição para a API e renderizei os posters dos filmes
+- ainda preciso criar um botao para voltar depois que acaba a lista de filmes
+- criar os gifs de processamento
+- e o botão para ver o trailer do filme

@@ -1,19 +1,25 @@
-'use client'
+"use client";
 
-import { CalendarBlank, Clock } from "phosphor-react"
+import { CalendarBlank, Clock } from "phosphor-react";
+interface FooterProps {
+  date: any;
+}
 
-export function Footer() {
-    return (
-        <div className="flex justify-between text-base-grayLight py-2">
-          <div className="flex gap-1">
-          <Clock size={20}/>
-            <span>1:54:20</span>
-          </div>
-        <div className="flex gap-1">
-        <CalendarBlank size={20}/>
-        <span>2023</span>
-        </div>
+export function Footer(props: FooterProps) {
+  const date = new Date(props.date);
 
-        </div>
-    )
+  function FormatDate(date: any) {
+    const year = date.getFullYear();
+
+    return year;
+  }
+
+  const formatedDate = FormatDate(date);
+
+  return (
+    <div className="w-full flex justify-center gap-1 items-center text-base-grayLight py-2">
+      <CalendarBlank size={20} />
+      <span>{formatedDate}</span>
+    </div>
+  );
 }

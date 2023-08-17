@@ -1,19 +1,26 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
-import { API_KEY } from '../config/key'
+import { API_KEY } from "../config/key";
+
+//interface changeprops () => void
 
 export default function useMovies() {
-    
-    const url = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`;
-    const [movies, setMovies] = useState<any[]>([{}]);
-  
-    useEffect(() => {
-      axios
-        .get(url)
-        .then((response) => response.data)
-        .then((data) => setMovies(data.results.slice(0, 3))); // mudar esse slice(0, 3) de forma aleatorica depois!!
-                                                              // usa o chat ja exsitente no gpt para perguntar
-    }, []);
+  const url = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`;
+  const [movies, setMovies] = useState<any[]>([{}]);
+  const [index, setIndex] = useState(0);
 
-    return { movies }
+  function handleNextMovies() {
+    setIndex(index + 3);
+  }
+
+  useEffect(() => {
+    axios
+      .get(url)
+      .then((response) => response.data)
+      .then((data) => {
+        setMovies(data.results.slice(index, index + 3));
+      });
+  }, [index]);
+
+  return { movies, handleNextMovies };
 }
