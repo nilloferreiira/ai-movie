@@ -14,10 +14,11 @@ export function Main(props: MovieProps) {
         return (
           <div key={movie.id} className="flex items-center justify-center">
             <Card
+            key={movie.id}
               title={movie.title}
               vote={movie.vote_average}
               img={`${base_url}${movie.poster_path}`}
-              link={""}
+              idLink={movie.id}
               date={movie.release_date}
             />
           </div>

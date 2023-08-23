@@ -1,6 +1,6 @@
 "use client";
 
-import { CalendarBlank, Clock } from "phosphor-react";
+import { CalendarBlank } from "phosphor-react";
 interface FooterProps {
   date: any;
 }

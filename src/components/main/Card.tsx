@@ -6,7 +6,7 @@ import Image from "next/image";
 interface CardProps {
   title: any;
   img: string;
-  link: string;
+  idLink: string;
   vote: any;
   date: string;
 }
@@ -26,7 +26,7 @@ export function Card(props: CardProps) {
 
       <Footer date={props.date} />
       
-      <PlayButton link={props.link} />
+      <PlayButton idLink={props.idLink} />
     </div>
   );
 }

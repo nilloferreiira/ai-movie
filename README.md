@@ -19,3 +19,6 @@ Uma aplicação usando Next13 e React, que consome uma API e retorna filmes que 
 - ainda preciso criar um botao para voltar depois que acaba a lista de filmes
 - criar os gifs de processamento
 - e o botão para ver o trailer do filme
+
+### dia 23/08: 
+* Finalmente pude voltar a trabalhar nesse projeto e hoje fiz o hook que leva ao trailer do filme. Confesso que tive uma certa dificuldade, devido aos paramentros que tive q acessar, na verdade ainda não está 100% funcional pois alguns filmes o hook não leva exatamente ao trailer. Amanhã pretendo corrigir isso, mas pra quem começou o dia sem nem conseguir fazer a requisição já está ótimo.
