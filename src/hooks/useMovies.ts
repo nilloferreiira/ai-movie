@@ -2,8 +2,6 @@ import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import { API_KEY } from "../config/key";
 
-//interface changeprops () => void
-
 export default function useMovies() {
   const url = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`;
   const [movies, setMovies] = useState<any[]>([{}]);
@@ -11,6 +9,10 @@ export default function useMovies() {
 
   function handleNextMovies() {
     setIndex(index + 3);
+  }
+
+  function handlePreviousMovies() {
+    setIndex(index - 3);
   }
 
   useEffect(() => {
@@ -22,5 +24,5 @@ export default function useMovies() {
       });
   }, [index]);
 
-  return { movies, handleNextMovies };
+  return { movies, index, handleNextMovies, handlePreviousMovies };
 }
