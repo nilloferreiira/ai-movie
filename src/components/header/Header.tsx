@@ -3,6 +3,7 @@ import { Button } from "./Button";
 
 interface ButtonProps {
   change: () => void;
+  loading: boolean;
 }
 
 export function Header(props: ButtonProps) {
@@ -10,7 +11,7 @@ export function Header(props: ButtonProps) {
       <>
     <header className="flex items-center justify-between w-full mb-9">
       <Image src={"/img/Logo.png"} alt={"Logo"} width={86} height={44} />
-      <Button change={props.change} />
+      <Button change={props.change} loading={props.loading} />
     </header>
       </>
   );
