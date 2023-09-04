@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { API_KEY } from "@/config/key"; //mudar
 
 export default function useTrailer(props: any) {
-  // const API_KEY = process.env.API_KEY
+  const API_KEY = process.env.NEXT_PUBLIC_API_KEY
+
   const [trailerLink, setTrailerLink] = useState();
   useEffect(() => {
     axios
