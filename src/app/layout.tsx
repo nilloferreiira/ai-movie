@@ -1,7 +1,7 @@
+import { GithubImage } from '@/components/Github'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Outfit } from 'next/font/google'
-
 const outfit = Outfit({ subsets: ['latin'],
                         weight: ['300', '400', '500', '600']
 })
@@ -18,7 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={`${outfit.className} bg-gradient-to-r from-principal-purple to-principal-pink`}>{children}</body>
+      <body className={`${outfit.className} bg-gradient-to-r from-principal-purple to-principal-pink`}>
+        {children}
+        <GithubImage />
+        </body>
     </html>
   )
 }
