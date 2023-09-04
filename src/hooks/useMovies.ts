@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
-import { API_KEY } from "../config/key";
 import useLoading from "./useLoading";
 
 export default function useMovies() {
+  const API_KEY = process.env.NEXT_PUBLIC_API_KEY
   const url = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`;
   const { loading, startLoad, finishLoad } = useLoading()
 

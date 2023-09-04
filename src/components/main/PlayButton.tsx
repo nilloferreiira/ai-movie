@@ -1,10 +1,6 @@
 "use client";
 
 import { Play } from "phosphor-react";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { API_KEY } from "@/config/key";
-
 import useTrailer from "@/hooks/useTrailer";
 
 interface PlayProps {
