@@ -18,7 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={`${outfit.className} bg-gradient-to-r from-principal-purple to-principal-pink flex flex-col gap-10`}>
+      <body className={`${outfit.className} 
+      bg-gradient-to-r from-principal-purple to-principal-pink 
+      flex 
+      flex-col 
+      gap-10
+      `}>
         {children}
         <GithubImage />
         </body>
