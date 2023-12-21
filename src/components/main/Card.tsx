@@ -13,7 +13,7 @@ interface CardProps {
 
 export function Card(props: CardProps) {
   return (
-    <div className="w-full flex flex-col justify-center items-center">
+    <div className="w-[21rem] lg:w-full md:w-full flex flex-col justify-center items-center">
       <Title vote={props.vote}>{props.title}</Title>
 
       <Image

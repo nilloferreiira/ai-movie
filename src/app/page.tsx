@@ -14,9 +14,11 @@ export default function Home() {
       sm:w-full
       flex flex-col 
       items-center
-      mx-auto mt-32 
+      mx-auto
+      mt-4
+      lg:mt-32 md:mt-32 
       lg:py-16 lg:px-20
-      py-8 px-8      
+      py-8 px-6      
       border-4 border-principal-pink rounded-lg
       bg-base-grayDark
      `}
