@@ -15,8 +15,8 @@ export default function Home() {
       flex flex-col 
       items-center
       mx-auto
-      mt-4
-      lg:mt-32 md:mt-32 
+      my-4
+      lg:mt-32 md:mt-32 md:my-24
       lg:py-16 lg:px-20
       py-8 px-6      
       border-4 border-principal-pink rounded-lg
