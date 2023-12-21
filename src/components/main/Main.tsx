@@ -35,7 +35,7 @@ export function Main(props: MovieProps) {
           );
         })}
       {props.index > 2 && (
-        <div className="flex justify-center lg:justify-end md:justify-end lg:col-span-3 md:col-span-3 col-span-1 lg:mt-1 md:mt-2 mt-4">
+        <div className="flex justify-center lg:justify-end lg:col-span-3 col-span-1 lg:mt-1 mt-4">
         <PreviousMovies previous={props.previous} />
         </div>
       )}
