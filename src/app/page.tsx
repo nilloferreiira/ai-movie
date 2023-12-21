@@ -13,9 +13,10 @@ export default function Home() {
       lg:w-[50%]
       sm:w-full
       flex flex-col 
-      items-center 
+      items-center
       mx-auto mt-32 
-      py-16 px-20 
+      lg:py-16 lg:px-20
+      py-8 px-8      
       border-4 border-principal-pink rounded-lg
       bg-base-grayDark
      `}

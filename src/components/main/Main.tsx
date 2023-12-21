@@ -10,7 +10,7 @@ interface MovieProps {
 export function Main(props: MovieProps) {
   const base_url = "https://image.tmdb.org/t/p/original";
   return (
-    <div className="grid gap-8 grid-cols-3 items-center w-full">
+    <div className="grid grid-cols-3 gap-2 lg:gap-8 items-center w-full">
       {props.movies.map((movie) => {
         return (
           <div key={movie.id} className="flex items-center justify-center">
