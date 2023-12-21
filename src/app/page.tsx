@@ -18,7 +18,7 @@ export default function Home() {
       lg:py-16 lg:px-20
       py-8 px-8      
       border-4 border-principal-pink rounded-lg
-      bg-base-grayDark
+      bg-base-grayLight
      `}
     >
       <Header change={handleNextMovies} loading={loading} />
